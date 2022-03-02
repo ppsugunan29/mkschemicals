@@ -222,10 +222,27 @@ fieldset[disabled] .btn-xl.active {
     opacity: 0;
 }
 
+@media (max-width:550px) {
+    .wrapper {
+        width: 85%;
+    }
+    .intro-text{
+        margin-top:-40px ;
+    }
+    
+}
+
 @media (max-width:480px) {
     .wrapper {
-        width: 90%;
+        width: 75%;
     }
+    .intro-text h1{
+        margin-top: -50px;
+    }
+    .intro-text{
+        margin-top:-50px ;
+    }
+    
 }
 
 
@@ -236,7 +253,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default {
-    background-color: #222;
+    background-color: rgb(42, 47, 59);
     border-color: transparent;
 }
 
@@ -469,7 +486,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .intro-text .intro-heading {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Montserrat', serif;
     text-transform: uppercase;
     font-size: 70px;
     line-height: 0px;
@@ -483,11 +500,18 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (max-width: 450px) {
-
+    
     .intro-text {
-    padding-bottom: 35px;
+    padding-top: 75px;
     text-align: center;
-}
+    }
+    .intro-lead-in{
+        display: none;
+    }
+    .intro-heading {
+        width: max-content;
+        margin: auto;
+    }
 }
 
 /* 4.0 ==========   SLIDER   ==*/
@@ -678,7 +702,7 @@ video {
 @media (max-width: 600px){
 .intro-text .intro-lead-in {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 .carousel-caption .btn {
     display: none;
@@ -1616,10 +1640,7 @@ section#contact {
    box-shadow: none !important;
   margin-bottom: 0px !important;
 }
-}
 
-
-}
 section#contact .section-heading {
     color: #fff !important;
 }
@@ -1947,4 +1968,21 @@ ul.social-buttons li a:active {
     margin-bottom: 10px;
     float: left;
     width: 100%;
+}
+
+
+
+
+#map{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 990px){
+    #map {
+    margin-top: 20px;
+    }
 }
