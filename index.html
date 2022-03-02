@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!--
-	xBe by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-
-
 <html lang="en">
 
 <head>
@@ -23,8 +16,16 @@
     <!-- Custom CSS -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
     <!-- Custom Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@400;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
@@ -42,7 +43,7 @@
 
 </head>
 
-<body>
+<body >
     <!-- HEADER -->
     <header id="header">
         <!-- Navigation -->
@@ -120,8 +121,8 @@
                                 <div class="intro-text">
                                     <h1 class="intro-lead-in animated bounceInLeft">The One Stop Solution</h1>
                                     <h2 class="intro-heading animated bounceInRight">MKS Chemicals</h2>
-                                    <p class="intro-paragraph animated bounceInRight">We, the team <Strong>MKS</Strong>, carries a wide range of services from providing household chemicals
-                                         <br>to executing any kind of MEP servicing across the beautiful landscape of Kerala.</p>
+                                    <p class="intro-paragraph animated bounceInRight">We, the team <Strong>MKS</Strong>, supplies a wide range of Chemical products from household cleaning products
+                                         <br>to any kind of industrial chemical compound across the beautiful landscape of Kerala.</p>
                                 </div>
                                 <a href="#products" class="page-scroll btn btn-xl slider-button animated bounceInUp">Explore Products</a>
                             </div>
@@ -137,8 +138,8 @@
                                 <div class="intro-text">
                                     <h1 class="intro-lead-in animated bounceInLeft">The One Stop Solution</h1>
                                     <h2 class="intro-heading animated bounceInRight">MKS Services</h2>
-                                    <p class="intro-paragraph animated bounceInRight">We, the team <Strong>MKS</Strong>, carries a wide range of services from providing household chemicals
-                                        <br>to executing any kind of MEP servicing across the beautiful landscape of Kerala.</p>
+                                    <p class="intro-paragraph animated bounceInRight">We, the team <Strong>MKS</Strong>, provides a wide range of services from housekeeping services
+                                        <br>to executing any kind of MEP installations across the beautiful landscape of Kerala.</p>
                                 </div>
                                 <a href="#services" class="page-scroll btn btn-xl slider-button animated bounceInUp">Explore Services</a>
                             </div>
@@ -161,7 +162,7 @@
     <section id="products">
         <div class="container-fluid wrapper">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="products_heading">
                     <h2 class="section-heading">Products</h2>
                     <h3 class="section-subheading text-muted">Our broad range of Industrial Chemicals covers a broad range of chemicals used in water treatment plants, cosmetics and soap manufacture, swimming pools and many for many other applications.</h3>
                 </div>
@@ -590,8 +591,8 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="block-text">
                                     <img src="img/team/human icon.png" alt="team-member-img3" class="col-md-6 img-circle">
-                                    <h5 class="testimonial-text">Definitely, this the best firm for housekeeping facilitation/ Cleaning jobs at my office. Good luck team MKS. </h5>
-                                    <p class="testimonial-author"><strong>Ganesh Kumar</strong>, Managing Director Cell World</p>
+                                    <h5 class="testimonial-text">Definitely, this is the best firm for housekeeping facilitation / cleaning jobs at my office. Good luck team MKS Services. </h5>
+                                    <p class="testimonial-author"><strong>Ganesh Kumar</strong>, M D Cell World Mobiles</p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -659,7 +660,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="" novalidate action="mailto:ppsugunan29@gmail.com" method="post" enctype="text/plain">
+                    <form name="sentMessage" action="mailto:ppsugunan29@gmail.com" method="post" enctype="text/plain">
                         <div class="row">
                             <div class="col-md-6 contact-form-box">
                                 <div class="form-group">
@@ -682,20 +683,23 @@
 
                                 <div id="success"></div>
                                 <button type="submit" value="Send" class="btn btn-xl">Send Message</button>
-                               
-                           </div>
-                            <div class="col-md-6">
-                                <div id="map-canvas">
-                                
-                                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2924916241864!2d76.8886431146503!3d8.567848798400192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bfb775c0f201%3A0xcc17d7fbcb48a965!2sMKS%20Chemicals!5e0!3m2!1sen!2sin!4v1636231859523!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    -->
-                                </div>
-                              </div>   
-                                
-                            <div class="clearfix"></div>
-                           
-                        </div>
-                    </form>
+                    </form>  
                 </div>
+                <div class="col-md-6">
+                    <!-- <div id="map-canvas">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2924916241864!2d76.8886431146503!3d8.567848798400192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bfb775c0f201%3A0xcc17d7fbcb48a965!2sMKS%20Chemicals!5e0!3m2!1sen!2sin!4v1636231859523!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div> -->
+                    <div id="map"></div>
+                </div>   
+                              
+                              
+                                
+                <div class="clearfix"></div>
+                           
+            </div>
+                    
+            </div>
             </div>
         </div>
     </section>
@@ -884,7 +888,13 @@
     <!-- Isotope -->
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <!-- Google Map -->
-    <script src="http://maps.googleapis.com/maps/api/js?extension=.js&output=embed"></script>
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?extension=.js&output=embed"></script> -->
+    
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    
+
+    
+    
     <!-- Footer Reveal scirt -->
     <script src="js/footer-reveal.js"></script>
 
